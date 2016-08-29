@@ -107,11 +107,11 @@ public class Grid : MonoBehaviour
 
     public Vector3? PositionAtColsRows(int column, int row)
     {
-        if (column > numberWide)
+        if ((column > numberWide) || (column < 0))
         {
             return null;
         }
-        if (row > numberHigh)
+        if ((row > numberHigh) || (row < 0))
         {
             return null;
         }
